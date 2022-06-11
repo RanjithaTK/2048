@@ -306,14 +306,14 @@ $(document).ready(function () {
       let num = squares[i].innerHTML
       $(`.grid div:eq(${i})`).css("background-color", colorValue[num])
       // $(`.grid div:eq(${i})`).animate({ "backgroundColor": colorValue[num] });
-      $(`.grid div:eq(${i})`).hover(
-        function () {
-          $(this).css("background-color", "rgb(241, 247, 248)") //(f1,f2})
-        },
-        function () {
-          $(this).css({ backgroundColor: colorValue[num] })
-        }
-      )
+      //   $(`.grid div:eq(${i})`).hover(
+      //     function () {
+      //       $(this).css("background-color", "rgb(241, 247, 248)") //(f1,f2})
+      //     },
+      //     function () {
+      //       $(this).css({ backgroundColor: colorValue[num] })
+      //     }
+      //   )
     }
   }
   checkForcolor()
